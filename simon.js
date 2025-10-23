@@ -35,7 +35,7 @@ function levelup(){
     level++;
     h2.innerText=`level ${level}`;
     
-    let randind= Math.floor(Math.random()*3);
+    let randind= Math.floor(Math.random()*4);
     let randcol=btns[randind];
     let randbtn=document.querySelector(`.${randcol}`);
     gameSeq.push(randcol);
@@ -80,4 +80,5 @@ function reset(){
     gameSeq=[];
     userSeq=[];
     level=0;
+
 }
